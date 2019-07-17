@@ -60,7 +60,7 @@ class LoginActivity : AppCompatActivity(), ILoginView {
                             intent.putExtra("id", myId)
                             startActivity(intent)
                         } else
-                            Toast.makeText(applicationContext, result.message, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(applicationContext, result.message, Toast.LENGTH_SHORT).show()
                     }, { error ->
                         error.printStackTrace()
                         Toast.makeText(applicationContext, error.toString(), Toast.LENGTH_SHORT).show()
